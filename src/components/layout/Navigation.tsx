@@ -15,7 +15,11 @@ const navItems = [
 
 export default function Navigation() {
   const pathname = usePathname();
-  const { language, toggleLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
+
+  const handleLanguageToggle = () => {
+    setLanguage(language === 'en' ? 'jp' : 'en');
+  };
 
   return (
     <nav className="fixed top-0 w-full p-8 z-50">
@@ -46,7 +50,7 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button onClick={toggleLanguage} className="text-gray-300 hover:text-white transition-colors">
+          <button onClick={handleLanguageToggle} className="text-gray-300 hover:text-white transition-colors">
             EN <span className="text-gray-300">/</span> JP
           </button>
           <a
