@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shiori Portfolio Website
 
-## Getting Started
+This repository contains the source code for **shiori-web**, the personal portfolio site for dancer **Shiori Murayama**. The site is built with **Next.js 14**, TypeScript and Tailwind CSS.
 
-First, run the development server:
+## Development
+
+Install dependencies and start the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application runs at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/              # Next.js pages (App Router)
+    bio/            # Biography page
+    contact/        # Contact form page
+    gallery/        # Photo & video gallery
+    work/           # Work list and dynamic work details
+    layout.tsx      # Root layout with navigation & language provider
+    globals.css     # Global styles
+    page.tsx        # Home page
+  components/       # Reusable React components
+  lib/              # Data and utility modules
+    data/           # Portfolio data such as performances
+public/
+  images/           # Images referenced across the site
+```
 
-## Learn More
+### Pages
 
-To learn more about Next.js, take a look at the following resources:
+- `/` – Home page with hero section and introduction
+- `/bio` – Biography in English and Japanese
+- `/work` – Grid of performances sourced from `src/lib/data/performances.ts`
+- `/work/[id]` – Detail page for each performance
+- `/gallery` – Filterable gallery of photos and videos
+- `/contact` – Simple contact form (submission logic TBD)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+There are currently **no API routes** in this project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Portfolio Content
 
-## Deploy on Vercel
+- **Images**: add JPG/PNG files to `public/images` and reference them in pages or data.
+- **Work data**: `src/lib/data/performances.ts` exports an array of `Performance` objects. Each object contains metadata and a list of media items. Update this file to add new performances or edit existing entries.
+- **Translations**: the `LanguageProvider` in `src/components/providers/LanguageProvider.tsx` handles English/Japanese toggling. Text strings live directly in the page components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To create a new page, add a folder with `page.tsx` under `src/app` following the existing pattern. Use Tailwind classes for styling and keep interactive components marked with `'use client'`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Key Dependencies
+
+- `next` – React framework powering the App Router
+- `react` and `react-dom`
+- `tailwindcss` and `@tailwindcss/typography` for styling
+- `framer-motion` for animations
+- `three`, `@react-three/fiber` and `@react-three/drei` for potential 3D content
+- `react-use-measure` for measuring DOM nodes
+
+## Deployment
+
+The site can be built with `npm run build` and served with `npm start`. Deployment to platforms like Vercel works out of the box.
+
