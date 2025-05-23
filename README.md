@@ -26,6 +26,7 @@ src/
     globals.css     # Global styles
     page.tsx        # Home page
   components/       # Reusable React components
+    PerformanceMap/ # Map visualization of performance locations
   lib/              # Data and utility modules
     data/           # Portfolio data such as performances
 public/
@@ -36,7 +37,7 @@ public/
 
 - `/` – Home page with hero section and introduction
 - `/bio` – Biography in English and Japanese
-- `/work` – Grid of performances sourced from `src/lib/data/performances.ts`
+- `/work` – Grid of performances with an interactive map of locations
 - `/work/[id]` – Detail page for each performance
 - `/gallery` – Filterable gallery of photos and videos
 - `/contact` – Simple contact form (submission logic TBD)

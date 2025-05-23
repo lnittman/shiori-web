@@ -4,11 +4,17 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import PageLayout from '@/components/layout/PageLayout';
 import { performances } from '@/lib/data/performances';
+import PerformanceMap, { toMapMarkers } from '@/components/PerformanceMap';
+
+const markers = toMapMarkers(performances);
 
 export default function Work() {
   return (
     <PageLayout>
       <div className="max-w-[1800px] mx-auto px-6">
+        <section className="mb-12">
+          <PerformanceMap markers={markers} />
+        </section>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-6">
           {performances.map((performance, index) => (
             <Link href={`/work/${performance.id}`} key={index} className="block w-full">

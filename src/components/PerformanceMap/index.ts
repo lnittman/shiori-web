@@ -1,8 +1,9 @@
 export { default } from './PerformanceMap';
 export type { Marker } from './PerformanceMap';
 export { locationMap, coordsFor } from './locationMap';
+import type { Performance } from '@/lib/data/performances';
 
-export function toMapMarkers(perfs: { location: string; title: string; artist: string; year: string; media: {type:'image'|'video'; url:string;}[] }) {
+export function toMapMarkers(perfs: Performance[]) {
   return perfs
     .map((p) => {
       const c = coordsFor(p.location);
