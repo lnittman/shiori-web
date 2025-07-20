@@ -1,77 +1,69 @@
 <div align="center">
-  <img src="https://v3.fal.media/files/lion/jRmxogpAzui4IjjiOlmsN.png" alt="shiori-web logo" width="80" height="80">
+  <img src="https://v3.fal.media/files/elephant/bqnhesIe6Sc_PZYU8oSmZ.png" alt="shiori logo" width="80" height="80">
   
   # shiori-web
   
-  **modern web-based bookmark manager with intelligent organization**
+  **elegant dancer portfolio showcasing artistry and performance**
 </div>
 
 <br>
 
 ## Overview
 
-Shiori-web is a sophisticated bookmark management application that transforms how you save, organize, and rediscover web content. Built with modern web technologies for speed and reliability.
+Shiori is a beautiful web portfolio for showcasing dance artistry, performances, and creative expression. Built to highlight the grace, skill, and passion of professional dance.
 
 ## Features
 
-- 🔖 **Smart Bookmarking** - Intelligent categorization and tagging
-- 🔍 **Powerful Search** - Full-text search across bookmarks and content
-- 📁 **Organization Tools** - Folders, tags, and custom collections
-- 🌐 **Content Archive** - Local copies of bookmarked pages
-- 📱 **Cross-Platform** - Responsive design for all devices
-- 🔄 **Import/Export** - Seamless migration from other bookmark managers
+- 🩰 **Performance Gallery** - Stunning photo and video showcases
+- 🎭 **Creative Portfolio** - Artistic projects and collaborations
+- 📅 **Performance Schedule** - Upcoming shows and events
+- 🎨 **Visual Storytelling** - Immersive media presentations
+- 📱 **Responsive Design** - Beautiful on all devices
+- ✨ **Smooth Animations** - Graceful transitions and interactions
 
-## Technology Stack
+## Portfolio Sections
 
-- **Frontend**: Modern JavaScript framework with responsive UI
-- **Backend**: Efficient API for bookmark management
-- **Search**: Advanced full-text search capabilities
-- **Storage**: Optimized database design for fast queries
-- **Archive**: Web content preservation and indexing
+### Performance Gallery
+- **Professional Photos** - High-quality performance captures
+- **Video Highlights** - Choreography and performance reels
+- **Behind the Scenes** - Rehearsal and preparation moments
+- **Costume & Design** - Artistic costume and stage design
 
-## Quick Start
+### About & Biography
+- **Artist Story** - Personal journey and inspiration
+- **Training & Education** - Dance background and credentials
+- **Style & Technique** - Specialties and artistic approach
+- **Awards & Recognition** - Achievements and honors
 
-```bash
-git clone https://github.com/lnittman/shiori-web
-cd shiori-web
-npm install
-npm run dev
-```
+### Current Projects
+- **Active Performances** - Current and upcoming shows
+- **Collaborations** - Working with other artists
+- **Creative Works** - Original choreography and concepts
+- **Community Engagement** - Teaching and outreach
 
-Access the application at `http://localhost:3000`
+## Technology Features
 
-## Key Features
+- **Modern Web Design** - Clean, elegant, and artistic interface
+- **Performance Optimized** - Fast loading for media-rich content
+- **SEO Optimized** - Professional visibility and discoverability
+- **Content Management** - Easy updates for new performances
+- **Social Integration** - Connect with audiences across platforms
 
-### Intelligent Organization
-- **Auto-tagging** - AI-powered tag suggestions
-- **Smart folders** - Dynamic collections based on rules
-- **Duplicate detection** - Automatic duplicate bookmark handling
+## Design Philosophy
 
-### Advanced Search
-- **Full-text search** - Search within bookmark content
-- **Filter combinations** - Multiple criteria filtering
-- **Saved searches** - Quick access to common queries
+The portfolio emphasizes:
+- **Artistic Expression** - Design that complements dance artistry
+- **Visual Hierarchy** - Letting the performance be the star
+- **Elegant Typography** - Sophisticated and readable presentation
+- **Graceful Interactions** - Smooth, dance-inspired animations
 
-### Content Preservation
-- **Page archiving** - Local copies of bookmarked content
-- **Metadata extraction** - Automatic title, description, and tags
-- **Screenshot capture** - Visual previews of bookmarked pages
+## Performance Categories
 
-## Import Sources
-
-- **Browser bookmarks** - Chrome, Firefox, Safari, Edge
-- **Pocket** - Complete import with tags and archives
-- **Pinboard** - Full migration support
-- **Custom formats** - JSON, HTML, CSV support
-
-## Workflow
-
-1. **Save** - Quick bookmark addition with browser extension
-2. **Organize** - Automatic and manual categorization
-3. **Search** - Find bookmarks using natural language
-4. **Discover** - Rediscover forgotten content with smart suggestions
-5. **Share** - Export collections and share with others
+- **Contemporary Dance** - Modern artistic expression
+- **Classical Ballet** - Traditional technique and grace
+- **Jazz & Musical Theatre** - Dynamic performance styles
+- **Creative Collaborations** - Cross-disciplinary projects
 
 ---
 
-*Organize the web, find what matters*
+*Art in motion, stories through dance* ✨
