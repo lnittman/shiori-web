@@ -1,67 +1,77 @@
-# Shiori Portfolio Website
+<div align="center">
+  <img src="https://v3.fal.media/files/lion/jRmxogpAzui4IjjiOlmsN.png" alt="shiori-web logo" width="80" height="80">
+  
+  # shiori-web
+  
+  **modern web-based bookmark manager with intelligent organization**
+</div>
 
-This repository contains the source code for **shiori-web**, the personal portfolio site for dancer **Shiori Murayama**. The site is built with **Next.js 14**, TypeScript and Tailwind CSS.
+<br>
 
-## Development
+## Overview
 
-Install dependencies and start the dev server:
+Shiori-web is a sophisticated bookmark management application that transforms how you save, organize, and rediscover web content. Built with modern web technologies for speed and reliability.
+
+## Features
+
+- 🔖 **Smart Bookmarking** - Intelligent categorization and tagging
+- 🔍 **Powerful Search** - Full-text search across bookmarks and content
+- 📁 **Organization Tools** - Folders, tags, and custom collections
+- 🌐 **Content Archive** - Local copies of bookmarked pages
+- 📱 **Cross-Platform** - Responsive design for all devices
+- 🔄 **Import/Export** - Seamless migration from other bookmark managers
+
+## Technology Stack
+
+- **Frontend**: Modern JavaScript framework with responsive UI
+- **Backend**: Efficient API for bookmark management
+- **Search**: Advanced full-text search capabilities
+- **Storage**: Optimized database design for fast queries
+- **Archive**: Web content preservation and indexing
+
+## Quick Start
 
 ```bash
+git clone https://github.com/lnittman/shiori-web
+cd shiori-web
 npm install
 npm run dev
 ```
 
-The application runs at [http://localhost:3000](http://localhost:3000).
+Access the application at `http://localhost:3000`
 
-## Project Structure
+## Key Features
 
-```
-src/
-  app/              # Next.js pages (App Router)
-    bio/            # Biography page
-    contact/        # Contact form page
-    gallery/        # Photo & video gallery
-    work/           # Work list and dynamic work details
-    layout.tsx      # Root layout with navigation & language provider
-    globals.css     # Global styles
-    page.tsx        # Home page
-  components/       # Reusable React components
-    PerformanceMap/ # Map visualization of performance locations
-  lib/              # Data and utility modules
-    data/           # Portfolio data such as performances
-public/
-  images/           # Images referenced across the site
-```
+### Intelligent Organization
+- **Auto-tagging** - AI-powered tag suggestions
+- **Smart folders** - Dynamic collections based on rules
+- **Duplicate detection** - Automatic duplicate bookmark handling
 
-### Pages
+### Advanced Search
+- **Full-text search** - Search within bookmark content
+- **Filter combinations** - Multiple criteria filtering
+- **Saved searches** - Quick access to common queries
 
-- `/` – Home page with hero section and introduction
-- `/bio` – Biography in English and Japanese
-- `/work` – Grid of performances with an interactive map of locations
-- `/work/[id]` – Detail page for each performance
-- `/gallery` – Filterable gallery of photos and videos
-- `/contact` – Simple contact form (submission logic TBD)
+### Content Preservation
+- **Page archiving** - Local copies of bookmarked content
+- **Metadata extraction** - Automatic title, description, and tags
+- **Screenshot capture** - Visual previews of bookmarked pages
 
-There are currently **no API routes** in this project.
+## Import Sources
 
-## Portfolio Content
+- **Browser bookmarks** - Chrome, Firefox, Safari, Edge
+- **Pocket** - Complete import with tags and archives
+- **Pinboard** - Full migration support
+- **Custom formats** - JSON, HTML, CSV support
 
-- **Images**: add JPG/PNG files to `public/images` and reference them in pages or data.
-- **Work data**: `src/lib/data/performances.ts` exports an array of `Performance` objects. Each object contains metadata and a list of media items. Update this file to add new performances or edit existing entries.
-- **Translations**: the `LanguageProvider` in `src/components/providers/LanguageProvider.tsx` handles English/Japanese toggling. Text strings live directly in the page components.
+## Workflow
 
-To create a new page, add a folder with `page.tsx` under `src/app` following the existing pattern. Use Tailwind classes for styling and keep interactive components marked with `'use client'`.
+1. **Save** - Quick bookmark addition with browser extension
+2. **Organize** - Automatic and manual categorization
+3. **Search** - Find bookmarks using natural language
+4. **Discover** - Rediscover forgotten content with smart suggestions
+5. **Share** - Export collections and share with others
 
-## Key Dependencies
+---
 
-- `next` – React framework powering the App Router
-- `react` and `react-dom`
-- `tailwindcss` and `@tailwindcss/typography` for styling
-- `framer-motion` for animations
-- `three`, `@react-three/fiber` and `@react-three/drei` for potential 3D content
-- `react-use-measure` for measuring DOM nodes
-
-## Deployment
-
-The site can be built with `npm run build` and served with `npm start`. Deployment to platforms like Vercel works out of the box.
-
+*Organize the web, find what matters*
